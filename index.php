@@ -11,7 +11,7 @@ if(!isset($_SESSION['UserData']['Username'])){
 
 <head>
 <meta charset="utf-8"/>
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="style.css">
 <title> Jeopardy </title>
 </head>
 
@@ -151,7 +151,11 @@ if(!isset($_SESSION['UserData']['Username'])){
 </div>
 
 <div class="reset">
-	<h3> RESET </h3>
+	<a href="reset-page.php"><h3> RESET </h3></a>
+</div>
+
+<div class="giveup">
+	<a href="logout.php"><h3> Give Up </h3></a>
 </div>
 
 <p class="banner"> This is an interactive Jeopardy game. Click on buttons on the grid to choose the question. Your money will increase or decrease depending on whether or not you answer correctly. Click the "reset" button to start over or the "give up" button to give up without posting your score to the leaderboards.</p>

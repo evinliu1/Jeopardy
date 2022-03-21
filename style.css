@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: Ariel;
+	background: #4169E1;
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	text-align:center;
+	font-weight:bold;
+}
+main {
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+	height:60%;
+	width: 52.1%;
+	position: relative;
+	margin: 0 auto;
+}
+
+a{
+	color: red;
+	text-decoration: none;
+}
+
+a:hover{
+	color:blue;
+}
+
+.logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	top: 10%;
+	height: 150px;
+	width: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.counter{
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	height: 9%;
+	width: 15%;
+	font-size: 80px;
+	font-weight: bold;
+	color: red;
+	background: white;
+}
+
+.reset{
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	height: 9%;
+	width: 15%;
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	color: red;
+	background: white;
+}
+
+.giveup{
+	position: relative;
+	bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2%;
+	width: 15%;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: red;
+	border: 1px solid black;
+	background: white;
+}
+
+table{
+	table-layout: fixed;
+	text-align: center;
+	margin:0;
+	width: 100%;
+	border: 2px solid black;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+td{
+	text-align: center;
+	margin:0;
+	border: 1px solid black;
+	height: 15%;
+	width: auto;
+	width: 70%;
+}
+
+.dollars{
+	width: 100%;
+	height:auto;
+}
+
+.banner{
+	position: fixed;
+	bottom: 15px;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.button {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+	transition: width 0.2s, height 0.2s;
+	border:2px solid #1E90FF;
+	background:white;
+  }
