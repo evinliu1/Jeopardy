@@ -38,7 +38,6 @@ main {
 	position: absolute;
 	bottom: 10%;
 	left: 10%;
-	border: 3px solid black;
 	height: 11%;
 	width: 15%;
 	font-size: 80px;
@@ -52,7 +51,6 @@ main {
 	position: absolute;
 	bottom: 10%;
 	right: 10%;
-	border: 3px solid black;
 	height: 11%;
 	width: 15%;
 	font-size: 80px;
@@ -68,6 +66,8 @@ table{
 	margin:0;
 	width: 100%;
 	border: 2px solid black;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 td{
