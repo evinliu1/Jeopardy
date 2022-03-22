@@ -39,107 +39,107 @@ if(!isset($_SESSION['UserData']['Username'])){
 	</tr>
 	<tr>
 		<td>
-				<a href="dummy.html"><img src="one.png" alt="$200" class="dollars"></a>
+				<a href="questions.php?id=buildings-200"><img src="one.png" alt="$200" class="dollars"></a>
 		</td>
 		
 		<td>
-				<a href="dummy.html"><img src="one.png" alt="$200" class="dollars"></a>
+				<a href="questions.php?id=sayings-200"><img src="one.png" alt="$200" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="one.png" alt="$200" class="dollars"></a>
+				<a href="questions.php?id=math-200"><img src="one.png" alt="$200" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="one.png" alt="$200" class="dollars"></a>
+				<a href="questions.php?id=pop-200"><img src="one.png" alt="$200" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="one.png" alt="$200" class="dollars"></a>
+				<a href="questions.php?id=cs-200"><img src="one.png" alt="$200" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="one.png" alt="$200" class="dollars"></a>
+				<a href="questions.php?id=bio-200"><img src="one.png" alt="$200" class="dollars"></a>
 		</td>
 	</tr>
 	<tr>
 		<td>
-				<a href="dummy.html"><img src="two.png" alt="$400" class="dollars"></a>
+				<a href="questions.php?id=buildings-400"><img src="two.png" alt="$400" class="dollars"></a>
 		</td>
 		
 		<td>
-				<a href="dummy.html"><img src="two.png" alt="$400" class="dollars"></a>
+				<a href="questions.php?id=sayings-400"><img src="two.png" alt="$400" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="two.png" alt="$400" class="dollars"></a>
+				<a href="questions.php?id=math-400"><img src="two.png" alt="$400" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="two.png" alt="$400" class="dollars"></a>
+				<a href="questions.php?id=pop-400"><img src="two.png" alt="$400" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="two.png" alt="$400" class="dollars"></a>
+				<a href="questions.php?id=cs-400"><img src="two.png" alt="$400" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="two.png" alt="$400" class="dollars"></a>
+				<a href="questions.php?id=bio-400"><img src="two.png" alt="$400" class="dollars"></a>
 		</td>
 	</tr>
 	<tr>
 		<td>
-				<a href="dummy.html"><img src="three.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=buildings-600"><img src="three.png" alt="$600" class="dollars"></a>
 		</td>
 		
 		<td>
-				<a href="dummy.html"><img src="three.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=sayings-600"><img src="three.png" alt="$600" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="three.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=math-600"><img src="three.png" alt="$600" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="three.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=pop-600"><img src="three.png" alt="$600" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="three.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=cs-600"><img src="three.png" alt="$600" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="three.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=bio-600"><img src="three.png" alt="$600" class="dollars"></a>
 		</td>
 	</tr>
 	<tr>
 		<td>
-				<a href="dummy.html"><img src="four.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=buildings-800"><img src="four.png" alt="$800" class="dollars"></a>
 		</td>
 		
 		<td>
-				<a href="dummy.html"><img src="four.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=sayings-800"><img src="four.png" alt="$800" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="four.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=math-800"><img src="four.png" alt="$800" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="four.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=pop-800"><img src="four.png" alt="$800" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="four.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=cs-800"><img src="four.png" alt="$800" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="four.png" alt="$800" class="dollars"></a>
+				<a href="questions.php?id=bio-800"><img src="four.png" alt="$800" class="dollars"></a>
 		</td>
 	</tr>
 	<tr>
 		<td>
-				<a href="dummy.html"><img src="five.png" alt="$1600" class="dollars"></a>
+				<a href="questions.php?id=buildings-1000"><img src="five.png" alt="$1600" class="dollars"></a>
 		</td>
 		
 		<td>
-				<a href="dummy.html"><img src="five.png" alt="$1600" class="dollars"></a>
+				<a href="questions.php?id=sayings-1000"><img src="five.png" alt="$1000" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="five.png" alt="$1600" class="dollars"></a>
+				<a href="questions.php?id=math-1000"><img src="five.png" alt="$1000" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="five.png" alt="$1600" class="dollars"></a>
+				<a href="questions.php?id=pop-1000"><img src="five.png" alt="$1000" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="five.png" alt="$1600" class="dollars"></a>
+				<a href="questions.php?id=cs-1000"><img src="five.png" alt="$1000" class="dollars"></a>
 		</td>
 		<td>
-				<a href="dummy.html"><img src="five.png" alt="$1600" class="dollars"></a>
+				<a href="questions.php?id=bio-1000"><img src="five.png" alt="$1000" class="dollars"></a>
 		</td>
 	</tr>
 </table>
