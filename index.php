@@ -147,7 +147,9 @@ if(!isset($_SESSION['UserData']['Username'])){
 </main>
 
 <div class="counter">
-	<h3> $ </h3>
+	<h3>
+		<?php echo "$".$_COOKIE["score"]; ?>
+	</h3>
 </div>
 
 <div class="reset">

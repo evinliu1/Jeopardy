@@ -6,12 +6,35 @@
     </head>
     <body>
         <?php
+        $cookie_name = "score";
+        $cookie_value = 0;
+        define($cookie_name, $_COOKIE[$cookie_name]);
+
+        score.session_start();
+        error_reporting(0);
+        setcookie($cookie_name, $cookie_value);
+        ?>
+
+        <?php
+        error_reporting(0);
+
         if (isset($_POST["buildings-200"])) {
             $res = $_POST["buildings-200"];
             if ($res == "b200") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 200;
+            setcookie($cookie_name, $value);
+
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
             <?php }
@@ -22,7 +45,18 @@
             if ($res == "b400") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 400;
+            setcookie($cookie_name, $value);
+        
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -33,7 +67,18 @@
             if ($res == "b600") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 600;
+            setcookie($cookie_name, $value);
+        
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -44,7 +89,18 @@
             if ($res == "b800") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 800;
+            setcookie($cookie_name, $value);
+            
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -55,7 +111,18 @@
             if ($res == "b1000") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 1000;
+            setcookie($cookie_name, $value);
+
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -66,7 +133,18 @@
             if ($res == "s200") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 200;
+            setcookie($cookie_name, $value);
+
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -77,7 +155,18 @@
             if ($res == "s400") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 400;
+            setcookie($cookie_name, $value);
+            
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -88,7 +177,16 @@
             if ($res == "s600") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 600;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -99,7 +197,17 @@
             if ($res == "s800") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 800;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -110,7 +218,17 @@
             if ($res == "s1000") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 1000;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -121,7 +239,17 @@
             if ($res == "m200") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 200;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -132,7 +260,17 @@
             if ($res == "m400") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 400;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -143,7 +281,17 @@
             if ($res == "m600") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 600;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -154,7 +302,17 @@
             if ($res == "m800") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 800;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -165,7 +323,17 @@
             if ($res == "m1000") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 1000;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -176,7 +344,17 @@
             if ($res == "p200") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 200;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -187,7 +365,17 @@
             if ($res == "p400") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 400;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -198,7 +386,16 @@
             if ($res == "p600") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 600;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -209,7 +406,17 @@
             if ($res == "p800") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 800;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -220,7 +427,17 @@
             if ($res == "p1000") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 1000;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -231,7 +448,17 @@
             if ($res == "c200") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 200;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -242,7 +469,17 @@
             if ($res == "c400") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 400;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -253,7 +490,17 @@
             if ($res == "c600") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 600;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -264,7 +511,17 @@
             if ($res == "c800") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 800;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -275,7 +532,17 @@
             if ($res == "c1000") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 1000;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -286,7 +553,17 @@
             if ($res == "bio200") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 200;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -297,7 +574,17 @@
             if ($res == "bio400") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 400;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -308,7 +595,17 @@
             if ($res == "bio600") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 600;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -319,7 +616,17 @@
             if ($res == "bio800") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 800;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }
@@ -330,7 +637,17 @@
             if ($res == "bio1000") { ?>
                 <h1>Correct!</h1>
                 <a href="index.php">Back to game board</a>
-            <?php } else { ?>
+            <?php
+            score.session_start();
+            $_COOKIE[$cookie_name];
+            $cookie_value = $_COOKIE[$cookie_value];
+            $value = (int)$_COOKIE["$cookie_name"] + 1000;
+            setcookie($cookie_name, $value);
+            } else {
+                score.session_start();
+                $value = (int)$_COOKIE["$cookie_name"];
+                setcookie($cookie_name, $value);
+                ?>
                 <h1>Wrong...</h1>
                 <a href="index.php">Back to game baord</a>
                 <?php }

@@ -6,7 +6,11 @@
     </head>
     <body>
         <?php
+        define("score", 0);
+        score.session_start();
+        error_reporting(0);
         $id = $_GET['id'];
+        $cookie_name = "score";
         ?>
 
         <!-- Questions for GSU Campus Buildings -->
