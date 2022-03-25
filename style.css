@@ -3,10 +3,21 @@
 }
 
 body {
-	font-family: Ariel;
+	font-family: Arial;
 	background: #4169E1;
 	padding: 0;
 	margin: 0;
+	animation-name: fadeInAnimation;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 h1{
@@ -24,13 +35,12 @@ main {
 }
 
 a{
-	color: #ffa812;
+	color: red;
 	text-decoration: none;
 }
 
 a:hover{
-	color:red;
-	
+	color:blue;
 }
 
 .logo{
@@ -52,9 +62,8 @@ a:hover{
 	width: 15%;
 	font-size: 80px;
 	font-weight: bold;
-	color: #ffa812;
-	background: #002395;
-	border-radius: 10px;
+	color: red;
+	background: white;
 }
 
 .reset{
@@ -66,8 +75,8 @@ a:hover{
 	font-size: 80px;
 	font-weight: bold;
 	text-align: center;
-	background: #002395;
-	border-radius: 10px;
+	color: red;
+	background: white;
 }
 
 .giveup{
@@ -80,8 +89,9 @@ a:hover{
 	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
-	background: #002395;
-	border-radius: 10px;
+	color: red;
+	border: 1px solid black;
+	background: white;
 }
 
 table{

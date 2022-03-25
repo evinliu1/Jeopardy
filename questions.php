@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="qlayout.css">
         <title>Jeopardy</title>
     </head>
     <body>
+        <div class = "container">
+        <fieldset>
         <?php
-        define("score", 0);
-        score.session_start();
-        error_reporting(0);
+        session_start();
         $id = $_GET['id'];
-        $cookie_name = "score";
         ?>
 
         <!-- Questions for GSU Campus Buildings -->
@@ -230,5 +230,7 @@
                 <input name="sub" type="submit" value="Submit">
             </form>
         <?php } ?>
+        </fieldset>
+        </div>
     </body>
 </html>

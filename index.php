@@ -1,169 +1,59 @@
-<?php session_start(); /* Starts the session */
-
-if(!isset($_SESSION['UserData']['Username'])){
-	header("location:login.php");
-	exit;
-}
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang = en>
+    <head>
+        <title>Login</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="account.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
 
-<head>
-<meta charset="utf-8"/>
-<link rel="stylesheet" href="style.css">
-<title> Jeopardy </title>
-</head>
+    <body>
+        <?php
+            // Starts the session.
+            session_start();
+        ?>
 
+        <!-- User Login -->
+        <div class="container">
+            <div class="animate__bounceIn">
+                <form action="login-submit.php" method="post">
+                    <fieldset>
+                        <center>
+                        <h1>Login</h1>
+                        <p>Log in to your account here.</p>
+                        <hr>
+                        <label for="username"><b>Username</b></label><br>
+                        <input type="text" size=50 maxlength=25 name="Username" placeholder="Enter a username." required>
+                        <br>
+                        <label for="password"><b>Password</b></label><br>
+                        <input type="text" size=50 maxlength=25 name="Password" placeholder="Enter a password." required>
+                        <input type="submit" name="Submit" value="Login">
+                        
+                        <br><br><hr>
+                        <p>Don't have an account?</p>
+                        <a href="signup.php">Sign up here.</a>
+                        </center>
+                    </fieldset>
+                </form>
 
-<body>
-
-<div>
-<img src="logo.png" class="logo">
-</div>
-
-
-
-
-
-<main>
-
-<table>
-	<tr>
-		<td>GSU Campus Buildings</td>
-		<td>Old-time Sayings</td>
-		<td>Math</td>
-		<td>Pop Culture</td>
-		<td>Computer Science</td>
-		<td>Biology</td>
-	</tr>
-	<tr>
-		<td>
-				<a href="questions.php?id=buildings-200"><img src="one.png" alt="$200" class="dollars"></a>
-		</td>
-		
-		<td>
-				<a href="questions.php?id=sayings-200"><img src="one.png" alt="$200" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=math-200"><img src="one.png" alt="$200" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=pop-200"><img src="one.png" alt="$200" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=cs-200"><img src="one.png" alt="$200" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=bio-200"><img src="one.png" alt="$200" class="dollars"></a>
-		</td>
-	</tr>
-	<tr>
-		<td>
-				<a href="questions.php?id=buildings-400"><img src="two.png" alt="$400" class="dollars"></a>
-		</td>
-		
-		<td>
-				<a href="questions.php?id=sayings-400"><img src="two.png" alt="$400" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=math-400"><img src="two.png" alt="$400" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=pop-400"><img src="two.png" alt="$400" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=cs-400"><img src="two.png" alt="$400" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=bio-400"><img src="two.png" alt="$400" class="dollars"></a>
-		</td>
-	</tr>
-	<tr>
-		<td>
-				<a href="questions.php?id=buildings-600"><img src="three.png" alt="$600" class="dollars"></a>
-		</td>
-		
-		<td>
-				<a href="questions.php?id=sayings-600"><img src="three.png" alt="$600" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=math-600"><img src="three.png" alt="$600" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=pop-600"><img src="three.png" alt="$600" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=cs-600"><img src="three.png" alt="$600" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=bio-600"><img src="three.png" alt="$600" class="dollars"></a>
-		</td>
-	</tr>
-	<tr>
-		<td>
-				<a href="questions.php?id=buildings-800"><img src="four.png" alt="$800" class="dollars"></a>
-		</td>
-		
-		<td>
-				<a href="questions.php?id=sayings-800"><img src="four.png" alt="$800" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=math-800"><img src="four.png" alt="$800" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=pop-800"><img src="four.png" alt="$800" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=cs-800"><img src="four.png" alt="$800" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=bio-800"><img src="four.png" alt="$800" class="dollars"></a>
-		</td>
-	</tr>
-	<tr>
-		<td>
-				<a href="questions.php?id=buildings-1000"><img src="five.png" alt="$1600" class="dollars"></a>
-		</td>
-		
-		<td>
-				<a href="questions.php?id=sayings-1000"><img src="five.png" alt="$1000" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=math-1000"><img src="five.png" alt="$1000" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=pop-1000"><img src="five.png" alt="$1000" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=cs-1000"><img src="five.png" alt="$1000" class="dollars"></a>
-		</td>
-		<td>
-				<a href="questions.php?id=bio-1000"><img src="five.png" alt="$1000" class="dollars"></a>
-		</td>
-	</tr>
-</table>
-
-</main>
-
-<div class="counter">
-	<h3>
-		<?php echo "$".$_COOKIE["score"]; ?>
-	</h3>
-</div>
-
-<div class="reset">
-	<a href="reset-page.php"><h3> RESET </h3></a>
-</div>
-
-<div class="giveup">
-	<a href="logout.php"><h3> Give Up </h3></a>
-</div>
-
-<p class="banner"> This is an interactive Jeopardy game. Click on buttons on the grid to choose the question. Your money will increase or decrease depending on whether or not you answer correctly. Click the "reset" button to start over or the "give up" button to give up without posting your score to the leaderboards.</p>
-</body>
-
-
-
-
+                <?php
+            // Error: User's login credentials are not correct.
+            if(isset($_SESSION['fail_login'])){
+                if($_SESSION['fail_login'] == TRUE){
+                    ?>
+                    <center>
+                    <p>
+                        Either the username/password is incorrect or this account does not exist.
+                        <br>
+                        Please try again.
+                    </p>
+                    </center>
+                    <?php
+                    $_SESSION['fail_login'] = FALSE;
+                }
+            }
+        ?>
+            </div>
+        </div>
+    </body>
 </html>

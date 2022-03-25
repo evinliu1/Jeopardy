@@ -1,0 +1,10 @@
+body {
+    font-family: Arial;
+    background: #4169E1;
+}
+
+.center {
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
