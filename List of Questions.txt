@@ -1,0 +1,104 @@
+FIND QUESTIONS
+
+GSU Campus Buildings
+200
+	Q: This building filled with classrooms is connected to Library South.
+	A: Classroom South
+400
+	Q: This building offers various recreational services.
+	A: Student Recreation Center
+600
+	Q: This building includes its own library for law students.
+	A: College of Law
+800
+	Q: This building is located in the historic Fairlie Poplar District of Downtown Atlanta.
+	A: Aderhold Learning Center
+1000
+	Q: This building has eight floors with the top floor hosting special collections and archives.
+	A: Library South
+
+Old-time Sayings
+200
+200
+	Q: A way of saying that a task or activity was easy to complete.
+	A: A piece of cake
+400
+	Q: A way of saying it was raining very heavily.
+	A: Raining cats and dogs
+600
+	Q: A way of saying someone will be happy if things were different.
+	A: The grass is greener on the other side
+800
+	Q: A way of saying to solve two problems with one action.
+	A: Kill two birds with one stone
+1000
+	Q: A way of saying to do something rather than just talk about it.
+	A: Put your money where your mouth is
+
+Math
+200
+	Q: What are the first three digits of pi (decimal included)?
+	A: 3.14
+400
+	Q: What is the square root of 225?
+	A: 15
+600
+	Q: Theorem: a^2 + b^2 = c^2
+	A: Pythagorean theorem
+800
+	Q: What is the derivative of 4x?
+	A: 4
+1000
+	Q: This is a mathematical operation that determines how many times the base is multipled by itself to reach another number.
+	A: Logarithm
+
+Pop Culture
+200
+	Q: What is the name of Mickey Mouse's girlfriend?
+	A: Minnie Mouse
+400
+	Q: Shaggy, Scooby, Velma, Daphne... Who's missing?
+	A: Fred
+600
+	Q: This band told us that we are the champions.
+	A: Queen
+800
+	Q: What is the other superhero that the actor for Deadpool played?
+	A: Green Lantern
+1000
+	Q: A recent Korean show that is a social allegory and criticism of capitalism.
+	A: Squid Game
+
+Computer Science
+200
+	Q: This company made the Windows operating system.
+	A: Microsoft
+400
+	Q: This is the output of every prorgrammer's first program when first learning coding.
+	A: Hello World
+600
+	Q: This code consists of 0s and 1s.
+	A: Binary
+800
+	Q: The background color of a whole page can be changed by editing this CSS selector.
+	A: Body
+1000
+	Q: This variable belongs to a class instead of an object of a class.
+	A: Static variable
+
+Biology
+200
+	Q: An organism that is sought after by a predator is known as:
+	A: Prey
+400
+	Q: What is contained in the nucleus?
+	A: DNA
+600
+	Q: Which organelle converts food to energy for daily cellular activities?
+	A: Mitochondria
+800
+	Q: With limited oxygen available the production of what in the mitrochondria will decrease?
+	A: ATP
+1000
+	Q: This function provides the hydrogen atom.
+	A: NAPDH2

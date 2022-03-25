@@ -8,7 +8,7 @@ setcookie("score",0);
 ?>
 
 <!DOCTYPE html>
-<<html lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8" http-equiv = "refresh" content = "3; url = main.php"/>
         <link rel="stylesheet" href="singlepage.css">

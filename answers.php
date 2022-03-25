@@ -21,8 +21,8 @@
         error_reporting(0);
 
         if (isset($_POST["buildings-200"])) {
-            $res = $_POST["buildings-200"];
-            if ($res == "b200") { ?>
+            $res = strtolower($_POST["buildings-200"]);
+            if ($res == "classroom south") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -43,8 +43,8 @@
         }
         
         else if (isset($_POST["buildings-400"])) {
-            $res = $_POST["buildings-400"];
-            if ($res == "b400") { ?>
+            $res = strtolower($_POST["buildings-400"]);
+            if ($res == "student recreation center") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -65,8 +65,8 @@
         }
 
         else if (isset($_POST["buildings-600"])) {
-            $res = $_POST["buildings-600"];
-            if ($res == "b600") { ?>
+            $res = strtolower($_POST["buildings-600"]);
+            if ($res == "college of law") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -87,8 +87,8 @@
         }
 
         else if (isset($_POST["buildings-800"])) {
-            $res = $_POST["buildings-800"];
-            if ($res == "b800") { ?>
+            $res = strtolower($_POST["buildings-800"]);
+            if ($res == "aderhold learning center") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -109,8 +109,8 @@
         }
 
         else if (isset($_POST["buildings-1000"])) {
-            $res = $_POST["buildings-1000"];
-            if ($res == "b1000") { ?>
+            $res = strtolower($_POST["buildings-1000"]);
+            if ($res == "library south") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -131,8 +131,8 @@
         }
 
         else if (isset($_POST["sayings-200"])) {
-            $res = $_POST["sayings-200"];
-            if ($res == "s200") { ?>
+            $res = strtolower($_POST["sayings-200"]);
+            if ($res == "a piece of cake") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -153,8 +153,8 @@
         }
 
         else if (isset($_POST["sayings-400"])) {
-            $res = $_POST["sayings-400"];
-            if ($res == "s400") { ?>
+            $res = strtolower($_POST["sayings-400"]);
+            if ($res == "raining cats and dogs") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -175,8 +175,8 @@
         }
 
         else if (isset($_POST["sayings-600"])) {
-            $res = $_POST["sayings-600"];
-            if ($res == "s600") { ?>
+            $res = strtolower($_POST["sayings-600"]);
+            if ($res == "the grass is greener on the other side") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -195,8 +195,8 @@
         }
 
         else if (isset($_POST["sayings-800"])) {
-            $res = $_POST["sayings-800"];
-            if ($res == "s800") { ?>
+            $res = strtolower($_POST["sayings-800"]);
+            if ($res == "kill two birds with one stone") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -216,8 +216,8 @@
         }
 
         else if (isset($_POST["sayings-1000"])) {
-            $res = $_POST["sayings-1000"];
-            if ($res == "s1000") { ?>
+            $res = strtolower($_POST["sayings-1000"]);
+            if ($res == "put your money where your mouth is") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -237,8 +237,8 @@
         }
 
         else if (isset($_POST["math-200"])) {
-            $res = $_POST["math-200"];
-            if ($res == "m200") { ?>
+            $res = strtolower($_POST["math-200"]);
+            if ($res == "3.14") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -258,8 +258,8 @@
         }
 
         else if (isset($_POST["math-400"])) {
-            $res = $_POST["math-400"];
-            if ($res == "m400") { ?>
+            $res = strtolower($_POST["math-400"]);
+            if ($res == "15") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -279,8 +279,8 @@
         }
 
         else if (isset($_POST["math-600"])) {
-            $res = $_POST["math-600"];
-            if ($res == "m600") { ?>
+            $res = strtolower($_POST["math-600"]);
+            if ($res == "pythagorean theorem") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -300,8 +300,8 @@
         }
 
         else if (isset($_POST["math-800"])) {
-            $res = $_POST["math-800"];
-            if ($res == "m800") { ?>
+            $res = strtolower($_POST["math-800"]);
+            if ($res == "4") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -321,8 +321,8 @@
         }
 
         else if (isset($_POST["math-1000"])) {
-            $res = $_POST["math-1000"];
-            if ($res == "m1000") { ?>
+            $res = strtolower($_POST["math-1000"]);
+            if ($res == "logarithm") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -342,8 +342,8 @@
         }
 
         else if (isset($_POST["pop-200"])) {
-            $res = $_POST["pop-200"];
-            if ($res == "p200") { ?>
+            $res = strtolower($_POST["pop-200"]);
+            if ($res == "minnie mouse") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -363,8 +363,8 @@
         }
 
         else if (isset($_POST["pop-400"])) {
-            $res = $_POST["pop-400"];
-            if ($res == "p400") { ?>
+            $res = strtolower($_POST["pop-400"]);
+            if ($res == "fred") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -384,8 +384,8 @@
         }
 
         else if (isset($_POST["pop-600"])) {
-            $res = $_POST["pop-600"];
-            if ($res == "p600") { ?>
+            $res = strtolower($_POST["pop-600"]);
+            if ($res == "queen") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -404,8 +404,8 @@
         }
 
         else if (isset($_POST["pop-800"])) {
-            $res = $_POST["pop-800"];
-            if ($res == "p800") { ?>
+            $res = strtolower($_POST["pop-800"]);
+            if ($res == "green lantern") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -425,8 +425,8 @@
         }
 
         else if (isset($_POST["pop-1000"])) {
-            $res = $_POST["pop-1000"];
-            if ($res == "p1000") { ?>
+            $res = strtolower($_POST["pop-1000"]);
+            if ($res == "squid game") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -446,8 +446,8 @@
         }
 
         else if (isset($_POST["cs-200"])) {
-            $res = $_POST["cs-200"];
-            if ($res == "c200") { ?>
+            $res = strtolower($_POST["cs-200"]);
+            if ($res == "microsoft") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -467,8 +467,8 @@
         }
 
         else if (isset($_POST["cs-400"])) {
-            $res = $_POST["cs-400"];
-            if ($res == "c400") { ?>
+            $res = strtolower($_POST["cs-400"]);
+            if ($res == "hello world") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -488,8 +488,8 @@
         }
 
         else if (isset($_POST["cs-600"])) {
-            $res = $_POST["cs-600"];
-            if ($res == "c600") { ?>
+            $res = strtolower($_POST["cs-600"]);
+            if ($res == "binary") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -509,8 +509,8 @@
         }
 
         else if (isset($_POST["cs-800"])) {
-            $res = $_POST["cs-800"];
-            if ($res == "c800") { ?>
+            $res = strtolower($_POST["cs-800"]);
+            if ($res == "body") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -530,8 +530,8 @@
         }
 
         else if (isset($_POST["cs-1000"])) {
-            $res = $_POST["cs-1000"];
-            if ($res == "c1000") { ?>
+            $res = strtolower($_POST["cs-1000"]);
+            if ($res == "static variable") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -551,8 +551,8 @@
         }
 
         else if (isset($_POST["bio-200"])) {
-            $res = $_POST["bio-200"];
-            if ($res == "bio200") { ?>
+            $res = strtolower($_POST["bio-200"]);
+            if ($res == "prey") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -572,8 +572,8 @@
         }
 
         else if (isset($_POST["bio-400"])) {
-            $res = $_POST["bio-400"];
-            if ($res == "bio400") { ?>
+            $res = strtolower($_POST["bio-400"]);
+            if ($res == "dna") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -593,8 +593,8 @@
         }
 
         else if (isset($_POST["bio-600"])) {
-            $res = $_POST["bio-600"];
-            if ($res == "bio600") { ?>
+            $res = strtolower($_POST["bio-600"]);
+            if ($res == "mitochondria") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -614,8 +614,8 @@
         }
 
         else if (isset($_POST["bio-800"])) {
-            $res = $_POST["bio-800"];
-            if ($res == "bio800") { ?>
+            $res = strtolower($_POST["bio-800"]);
+            if ($res == "atp") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
@@ -635,8 +635,8 @@
         }
 
         else {
-            $res = $_POST["bio-1000"];
-            if ($res == "bio1000") { ?>
+            $res = strtolower($_POST["bio-1000"]);
+            if ($res == "napdh2") { ?>
                 <h1>Correct!</h1>
                 <a href="main.php">Back to game board</a>
             <?php
