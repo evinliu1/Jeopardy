@@ -93,6 +93,7 @@ a:hover{
 	font-weight: bold;
 	text-align: center;
 	color: #ffae42;
+	border: 1px solid black;
 	background: #00008b;
 	border-radius: 10px;
 }
